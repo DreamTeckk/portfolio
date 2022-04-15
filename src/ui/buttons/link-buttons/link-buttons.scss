@@ -1,0 +1,8 @@
+@import '/src/assets/scss/colors.scss';
+
+.active {
+    background-color: $purple_secondary;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 30px;
+}

@@ -1,0 +1,9 @@
+@import '../buttons.scss';
+
+.pf-btn {
+    span{
+        &::before {
+            font-size: 24px;
+        }
+    }
+}
