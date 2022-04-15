@@ -21,10 +21,10 @@ export default function Header() {
                         <ButtonIcon className='d-md-none' label='toggle-menu' icon='fa-bars' customClickEvent={() => setIsOpen(!isOpen)} />
                         <nav className={`${isOpen ? 'open' : ''}`}>
                             <ul className='d-md-flex flex-row justify-content-start list-unstyled mb-0 p-3 p-md-0'>
-                                <LinkButton path='/home' className='mb-3 mb-md-0 me-md-4'>Home</LinkButton>
-                                <LinkButton path='/experiences' className='mb-3 mb-md-0 me-md-4'>Experience</LinkButton>
+                                <LinkButton path='/' className='mb-3 mb-md-0 me-md-4'>Home</LinkButton>
+                                <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Experience</LinkButton>
                                 <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Education</LinkButton>
-                                <LinkButton path='/games' className='mb-3 mb-md-0 me-md-4'>Video Games</LinkButton>
+                                <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Video Games</LinkButton>
                             </ul>
                         </nav>
                     </Col>

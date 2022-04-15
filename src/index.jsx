@@ -1,19 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/header';
 import './index.scss';
+import Home from './pages/Home';
+import Education from './pages/Education';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    {/* <BrowserRouter>
+    <BrowserRouter>
+      <Header />
       <Routes>
-
+        <Route path="/" element={<Home />} />
+        <Route path="/education" element={<Education />} />
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
   </React.StrictMode>
 );
 
