@@ -1,7 +1,12 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 export default function Home() {
     return (
-        <div>index</div>
+        <Container>
+            <main>
+                home
+            </main>
+        </Container>
     )
 }

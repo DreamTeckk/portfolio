@@ -14,17 +14,25 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className="w-100 py-3">
+        <header className="w-100 py-3 bg-white">
             <Container>
                 <Row className="position-relative align-item-center">
                     <Col xs={'auto'} className='align-items-center d-md-flex'>
                         <ButtonIcon className='d-md-none' label='toggle-menu' icon='fa-bars' customClickEvent={() => setIsOpen(!isOpen)} />
-                        <nav className={`${isOpen ? 'open' : ''}`}>
+                        <nav className={`${isOpen ? 'open' : ''} bg-white`}>
                             <ul className='d-md-flex flex-row justify-content-start list-unstyled mb-0 p-3 p-md-0'>
-                                <LinkButton path='/' className='mb-3 mb-md-0 me-md-4'>Home</LinkButton>
-                                <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Experience</LinkButton>
-                                <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Education</LinkButton>
-                                <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Video Games</LinkButton>
+                                <li>
+                                    <LinkButton path='/' className='mb-3 mb-md-0 me-md-4'>Home</LinkButton>
+                                </li>
+                                <li>
+                                    <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Experience</LinkButton>
+                                </li>
+                                <li>
+                                    <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Education</LinkButton>
+                                </li>
+                                <li>
+                                    <LinkButton path='/education' className='mb-3 mb-md-0 me-md-4'>Video Games</LinkButton>
+                                </li>
                             </ul>
                         </nav>
                     </Col>

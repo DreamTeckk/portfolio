@@ -6,16 +6,23 @@ import './index.scss';
 import Home from './pages/Home';
 import Education from './pages/Education';
 import reportWebVitals from './reportWebVitals';
+import styled from 'styled-components';
+
+const ContentWrapper = styled.div`
+  padding-top: 100px
+`
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/education" element={<Education />} />
-      </Routes>
+      <ContentWrapper>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+        </Routes>
+      </ContentWrapper>
     </BrowserRouter>
   </React.StrictMode>
 );

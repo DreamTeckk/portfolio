@@ -1,14 +1,28 @@
+@import '/src/assets/scss/colors.scss';
+
 .pf-btn {
     cursor: pointer;
     display: inline-block;
     padding: 10px;
     transition: transform ease-out 0.1s;
+    transition: background-color ease-out 0.1s;
     transform: scale(0.95);
-    &:hover, &:focus {
-        transform: scale(1);
-    }
+    color: $font_color;
 
+    &:hover,
+    &:focus {
+        transform: scale(1);
+        background-color: $cream_primary;
+        color: $font_color!important;
+    }
+    
     &:active {
         transform: scale(0.97);
+        background-color: $cream_secondary;
+        color: $font_color!important;
+    }
+
+    &-rounded {
+        border-radius: 30px;
     }
 }

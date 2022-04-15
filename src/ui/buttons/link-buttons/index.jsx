@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom';
  */
 export default function LinkButton({children, className, path}) {
     return (
-        <NavLink to={path} className={`${className} pf-btn ${({isActive}) => isActive ? 'active' : ''}`}>
+        <NavLink to={path} className={`${className} pf-btn pf-btn-rounded px-4 py-3 text-decoration-none ${({isActive}) => isActive ? 'active' : ''}`}>
             {children}
         </NavLink>
     )
